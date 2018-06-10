@@ -1,6 +1,7 @@
 
 
-#Themy
+Themy
+=====
 
 
 Wordpress theme based on underscores and foundation 6
