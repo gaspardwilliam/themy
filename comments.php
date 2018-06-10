@@ -69,7 +69,7 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+	comment_form(array('class_submit'      => 'button',));
 	?>
 
 </div><!-- #comments -->

@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area cell large-8">
-		<main id="main" class="site-main ">
+		<main id="main" class="site-main grid-x grid-margin-x">
 
 		<?php
 		if ( have_posts() ) :
