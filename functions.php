@@ -121,10 +121,12 @@ add_action( 'widgets_init', 'themy_widgets_init' );
  * Enqueue scripts and styles.
  */
 function themy_scripts() {
-    wp_enqueue_style( 'foundation-style', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css' );
+    //wp_enqueue_style( 'foundation-style', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css' );
+    wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/dist/css/foundation.min.css' );
     wp_enqueue_style( 'motion-ui-style', 'https://cdnjs.cloudflare.com/ajax/libs/motion-ui/2.0.0/motion-ui.min.css' );
     
-	wp_enqueue_style( 'themy-style', get_stylesheet_uri() );
+	//wp_enqueue_style( 'themy-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'themy-style', get_template_directory_uri() . '/dist/css/styles.min.css' );
     
     wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), null, true);

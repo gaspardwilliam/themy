@@ -1,0 +1,57 @@
+// All Scss goes here.
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+/*----------------------NAVIGATION-----------------------------*/
+
+/*-------------------------------------------------------------*/
+#masthead{min-height:80px;}
+nav#main-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0
+}
+
+nav#main-nav.sticky {
+    animation: sticky .3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: forwards;
+
+}
+nav#main-nav .custom-logo{
+        max-height: 60px;
+    width: auto;
+}
+
+@keyframes sticky {
+    0% {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: -100%;
+    }
+
+    100% {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0%;
+    }
+}
+/*-------------------------------------------------------------*/
+
+/*----------------------pagniation-----------------------------*/
+
+/*-------------------------------------------------------------*/
+ul.page-numbers{
+    text-align:center;
+    margin:0;
+}
+ul.page-numbers li{
+    display:inline-block;
+}
